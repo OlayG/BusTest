@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.RxBusExampleActivity">
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.prokarma.bustest.view.fragment.ExampleFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_intent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_intent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Intent"
+        app:layout_constraintBottom_toTopOf="@id/btn_configuration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_configuration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Configuration"
+        app:layout_constraintBottom_toTopOf="@id/btn_report"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_report"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Report"
+        app:layout_constraintBottom_toTopOf="@id/btn_analytics"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_analytics"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Analytics"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
